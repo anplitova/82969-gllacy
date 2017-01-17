@@ -1,7 +1,7 @@
 # Личный проект «Глейси»
 
 * Студент: [Екатерина Анплитова](https://up.htmlacademy.ru/htmlcss/16/user/82969).
-* Наставник: `Неизвестно`.
+* Наставник: [Леонид Лебедев](https://htmlacademy.ru/profile/leonidlebedev).
 
 ---
 
