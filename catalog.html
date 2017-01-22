@@ -143,7 +143,70 @@
       </ul>
       <h1 class="page__title">Сливочное мороженое</h1>
       <form class="catalog-filter">
-
+        <div class="catalog-filter__item">
+          <span class="catalog-filter__title">Сортировка:</span>
+          <select class="select" name="filter-sorting">
+            <option class="select__value" value="по популярности">по популярности</option>
+            <option class="select__value" value="сначала недорогие">сначала недорогие</option>
+            <option class="select__value" value="сначала дорогие">сначала дорогие</option>
+            <option class="select__value" value="по жирности">по жирности</option>
+          </select>
+        </div>
+        <div class="catalog-filter__item">
+          <span class="catalog-filter__title">Цена: 100 руб. – 500 руб.</span>
+          <div class="range">
+            <button class="range__button range__button--min" type="button"></button>
+            <button class="range__button range__button--max" type="button"></button>
+            <div class="rang__scale"><span class="rang__scale-active"></span></div>
+          </div>
+        </div>
+        <div class="catalog-filter__item">
+          <span class="catalog-filter__title">Жирность:</span>
+          <div class="radio-list">
+            <div class="radio-list__item">
+              <input id="filter-fatness-1" class="radio-list__input" type="radio" name="filter-fatness">
+              <label class="radio-list__label" for="filter-fatness-1">0%</label>
+            </div>
+            <div class="radio-list__item">
+              <input id="filter-fatness-2" class="radio-list__input" type="radio" name="filter-fatness" checked>
+              <label class="radio-list__label" for="filter-fatness-2">до 10%</label>
+            </div>
+            <div class="radio-list__item">
+              <input id="filter-fatness-3" class="radio-list__input" type="radio" name="filter-fatness">
+              <label class="radio-list__label" for="filter-fatness-3">до 30%</label>
+            </div>
+            <div class="radio-list__item">
+              <input id="filter-fatness-4" class="radio-list__input" type="radio" name="filter-fatness">
+              <label class="radio-list__label" for="filter-fatness-4">выше 30%</label>
+            </div>
+          </div>
+        </div>
+        <div class="catalog-filter__item">
+          <span class="catalog-filter__title">Наполнители:</span>
+          <div class="checkbox-list">
+            <div class="checkbox-list__item">
+              <input id="filter-filler-1" class="checkbox-list__input" type="checkbox" name="filter-filler-1">
+              <label class="checkbox-list__label" for="filter-filler-1">шоколадные</label>
+            </div>
+            <div class="checkbox-list__item">
+              <input id="filter-filler-2" class="checkbox-list__input" type="checkbox" name="filter-filler-2">
+              <label class="checkbox-list__label" for="filter-filler-2">сахарные присыпки</label>
+            </div>
+            <div class="checkbox-list__item">
+              <input id="filter-filler-3" class="checkbox-list__input" type="checkbox" name="filter-filler-3">
+              <label class="checkbox-list__label" for="filter-filler-3">фрукты</label>
+            </div>
+            <div class="checkbox-list__item">
+              <input id="filter-filler-4" class="checkbox-list__input" type="checkbox" name="filter-filler-4">
+              <label class="checkbox-list__label" for="filter-filler-4">сиропы</label>
+            </div>
+            <div class="checkbox-list__item">
+              <input id="filter-filler-5" class="checkbox-list__input" type="checkbox" name="filter-filler-5">
+              <label class="checkbox-list__label" for="filter-filler-5">джемы</label>
+            </div>
+          </div>
+        </div>
+        <button class="catalog-filter__button" type="submit">Применить</button>
       </form>
       <section class="catalog">
         <article class="catalog__item">
