@@ -49,7 +49,7 @@
               <form class="form" action="" method="post">
                 <div class="form__item">
                   <label class="form__label" for="form-search">Что ищем?</label>
-                  <input id="form-search" class="form__input" type="text" name="catalog-search" placeholder="Что ищем?">
+                  <input id="form-search" class="form__input" type="text" name="catalog-search" placeholder="Что ищем?" required>
                 </div>
               </form>
             </div>
@@ -181,6 +181,24 @@
             <p class="shop-info__text">Доставка нашего мороженого до заказчиков осуществляется в специальном термопаке, который не дает мороженому растаять в пути и позволяет сохранить превосходный вкус.</p>
           </li>
         </ul>
+      </section>
+      <section class="blog">
+        <article class="blog__item">
+          <span class="blog__info">Новое в нашем блоге</span>
+          <h2 class="blog__title">
+            <a class="blog__link" href="#" title="10 способов сервировки фруктовых щербетов к столу">10 способов сервировки фруктовых щербетов к столу</a>
+          </h2>
+        </article>
+        <article class="blog__item blog__item---subscription">
+          <form class="form" action="" method="post">
+            <p class="form__info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
+            <div class="form__item">
+              <label class="form__label" for="form-email-subscription">Электронная почта</label>
+              <input id="form-email-subscription" class="form__input" type="email" name="email-subscription" placeholder="Электронная почта" required>
+              <button class="form__button" type="submit">Отправить</button>
+            </div>
+          </form>
+        </article>
       </section>
     </main>
 
