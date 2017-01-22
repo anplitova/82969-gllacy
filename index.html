@@ -6,6 +6,83 @@
     <link rel="stylesheet" href="css/style.min.css">
   </head>
   <body>
+    <header class="header">
+      <div class="header__item">
+        <img class="header__logo-image" src="http://placehold.it/154x64" alt="GllacyShop" width="154" height="64">
+      </div>
+        <div class="header__item">
+          <nav class="main-menu">
+            <ul class="main-menu__list">
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="#" title="Каталог">Каталог</a>
+                <ul class="dropdown-menu">
+                  <li class="dropdown-menu__item">
+                    <a class="dropdown-menu__link" href="#" title="Новинки">Новинки</a>
+                  </li>
+                  <li class="dropdown-menu__item">
+                    <a class="dropdown-menu__link" href="catalog.html" title="Сливочное">Сливочное</a>
+                  </li>
+                  <li class="dropdown-menu__item">
+                    <a class="dropdown-menu__link" href="#" title="Щербеты">Щербеты</a>
+                  </li>
+                  <li class="dropdown-menu__item">
+                    <a class="dropdown-menu__link" href="#" title="Фруктовы лед">Фруктовый лед</a>
+                  </li>
+                  <li class="dropdown-menu__item">
+                    <a class="dropdown-menu__link" href="#" title="Мелорин">Мелорин</a>
+                  </li>
+                </ul>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="#" title="Доставка и оплата">Доставка и оплата</a>
+              </li>
+              <li class="main-menu__item">
+                <a class="main-menu__link" href="#" title="О компании">О компании</a>
+              </li>
+            </ul>
+          </nav>
+        </div>
+        <div class="header__item">
+          <div class="search">
+            <a class="search__link" href="#" title="Поиск">Поиск</a>
+            <div class="search__modal">
+              <form class="form" action="" method="post">
+                <div class="form__item">
+                  <label class="form__label" for="form-search">Что ищем?</label>
+                  <input id="form-search" class="form__input" type="text" name="catalog-search" placeholder="Что ищем?">
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="login">
+            <a class="login__link" href="#" title="Вход">Вход</a>
+            <div class="login__modal">
+              <form class="form" action="" method="post">
+                <div class="form__item">
+                  <label class="form__label" for="form-email">Электронная почта</label>
+                  <input id="form-email" class="form__input" type="email" name="user-email" placeholder="Электронная почта">
+                </div>
+                <div class="form__item">
+                  <label class="form__label" for="form-password">Пароль</label>
+                  <input id="form-password" class="form__input" type="password" name="user-password" placeholder="Пароль">
+                </div>
+                <button class="form__button" type="submit">Войти</button>
+                <div class="form__link-wrapper">
+                  <a class="form__link" href="#" title="Забыли пароль?">Забыли пароль?</a>
+                  <a class="form__link" href="#" title="Новая регистрация">Новая регистрация</a>
+                </div>
+              </form>
+            </div>
+          </div>
+          <div class="cart">
+            <a class="cart__link" href="#" title="Пусто">Пусто</a>
+          </div>
+          <div class="info">
+            <span class="info__time">С 10 до 20, ежедневно</span>
+            <a class="info__phone" href="tel:+78124502525" title="8 812 450-25-25">8 812 450-25-25</a>
+          </div>
+        </div>
+    </header>
     <script src="js/script.min.js"></script>
   </body>
 </html>
