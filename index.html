@@ -60,11 +60,11 @@
               <form class="form" action="" method="post">
                 <div class="form__item">
                   <label class="form__label" for="form-email">Электронная почта</label>
-                  <input id="form-email" class="form__input" type="email" name="user-email" placeholder="Электронная почта">
+                  <input id="form-email" class="form__input" type="email" name="user-email" placeholder="Электронная почта" required>
                 </div>
                 <div class="form__item">
                   <label class="form__label" for="form-password">Пароль</label>
-                  <input id="form-password" class="form__input" type="password" name="user-password" placeholder="Пароль">
+                  <input id="form-password" class="form__input" type="password" name="user-password" placeholder="Пароль" required>
                 </div>
                 <button class="form__button" type="submit">Войти</button>
                 <div class="form__link-wrapper">
@@ -83,6 +83,36 @@
           </div>
         </div>
     </header>
+    <main class="page">
+      <section class="slider">
+        <div class="slider__button-wrapper">
+          <label class="slider__label">
+            <input class="slider__button" type="radio" name="slider-button" checked>
+          </label>
+          <label class="slider__label">
+            <input class="slider__button" type="radio" name="slider-button">
+          </label>
+          <label class="slider__label">
+            <input class="slider__button" type="radio" name="slider-button">
+          </label>
+        </div>
+        <div class="slider__list">
+          <div class="slider__item">
+            <h2 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
+            <a class="slider__link" href="#" title="Давайте оба!">Давайте оба!</a>
+          </div>
+          <div class="slider__item">
+            <h2 class="slider__title">Шоколадный пломбир и лимонный сорбет </h2>
+            <a class="slider__link" href="#" title="Давайте оба!">Давайте оба!</a>
+          </div>
+          <div class="slider__item">
+            <h2 class="slider__title">Пломбир с помадкой и клубничный щербет</h2>
+            <a class="slider__link" href="#" title="Давайте оба!">Давайте оба!</a>
+          </div>
+        </div>
+      </section>
+    </main>
+
     <script src="js/script.min.js"></script>
   </body>
 </html>
