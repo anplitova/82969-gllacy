@@ -7,10 +7,10 @@
   </head>
   <body>
     <header class="header">
-      <div class="header__item">
+      <div class="header__item header__item--logo">
         <img class="header__logo" src="http://placehold.it/154x64" alt="GllacyShop" width="154" height="64">
       </div>
-        <div class="header__item">
+        <div class="header__item header__item--menu">
           <nav class="main-menu">
             <ul class="main-menu__list">
               <li class="main-menu__item">
@@ -26,7 +26,7 @@
                     <a class="dropdown-menu__link" href="#" title="Щербеты">Щербеты</a>
                   </li>
                   <li class="dropdown-menu__item">
-                    <a class="dropdown-menu__link" href="#" title="Фруктовы лед">Фруктовый лед</a>
+                    <a class="dropdown-menu__link" href="#" title="Фруктовый лед">Фруктовый лед</a>
                   </li>
                   <li class="dropdown-menu__item">
                     <a class="dropdown-menu__link" href="#" title="Мелорин">Мелорин</a>
@@ -42,11 +42,11 @@
             </ul>
           </nav>
         </div>
-        <div class="header__item">
+        <div class="header__item header__item--other">
           <div class="search">
             <a class="search__link" href="#" title="Поиск">Поиск</a>
             <div class="search__modal">
-              <form class="form" action="#" method="post">
+              <form class="form" action="https://echo.htmlacademy.ru/" method="get">
                 <div class="form__item">
                   <label class="form__label" for="form-search">Что ищем?</label>
                   <input id="form-search" class="form__input" type="text" name="catalog-search" placeholder="Что ищем?" required>
@@ -57,7 +57,7 @@
           <div class="login">
             <a class="login__link" href="#" title="Вход">Вход</a>
             <div class="login__modal">
-              <form class="form" action="#" method="post">
+              <form class="form" action="https://echo.htmlacademy.ru/" method="get">
                 <div class="form__item">
                   <label class="form__label" for="form-email">Электронная почта</label>
                   <input id="form-email" class="form__input" type="email" name="user-email" placeholder="Электронная почта" required>
@@ -98,14 +98,17 @@
         </div>
         <div class="slider__list">
           <div class="slider__item">
+            <img class="slider__image" src="http://placehold.it/647x584" alt="Крем-брюле и пломбир с малиновым джемом" width="647" height="584">
             <h2 class="slider__title">Крем-брюле и пломбир с малиновым джемом</h2>
             <a class="slider__link" href="#" title="Давайте оба!">Давайте оба!</a>
           </div>
           <div class="slider__item">
-            <h2 class="slider__title">Шоколадный пломбир и лимонный сорбет </h2>
+            <img class="slider__image" src="http://placehold.it/644x582" alt="Шоколадный пломбир и лимонный сорбет" width="644" height="582">
+            <h2 class="slider__title">Шоколадный пломбир и лимонный сорбет</h2>
             <a class="slider__link" href="#" title="Давайте оба!">Давайте оба!</a>
           </div>
           <div class="slider__item">
+            <img class="slider__image" src="http://placehold.it/639x582" alt="Пломбир с помадкой и клубничный щербет" width="639" height="582">
             <h2 class="slider__title">Пломбир с помадкой и клубничный щербет</h2>
             <a class="slider__link" href="#" title="Давайте оба!">Давайте оба!</a>
           </div>
@@ -182,15 +185,15 @@
           </li>
         </ul>
       </section>
-      <section class="blog">
-        <article class="blog__item">
+      <section class="page__section">
+        <article class="blog">
           <span class="blog__info">Новое в нашем блоге</span>
           <h2 class="blog__title">
             <a class="blog__link" href="#" title="10 способов сервировки фруктовых щербетов к столу">10 способов сервировки фруктовых щербетов к столу</a>
           </h2>
         </article>
-        <article class="blog__item blog__item---subscription">
-          <form class="form" action="#" method="post">
+        <article class="subscription">
+          <form class="form" action="https://echo.htmlacademy.ru/" method="get">
             <p class="form__info">Подпишитесь на нашу сладкую рассылку и будете всегда в курсе всего самого вкусного, что у нас происходит. Обещаем не спамить и не слать всякой ненужной ерунды. Честно =)</p>
             <div class="form__item">
               <label class="form__label" for="form-email-subscription">Электронная почта</label>
@@ -202,14 +205,14 @@
       </section>
       <section class="map">
         <div class="map__info">
-          <div class="map__text">Адрес главного офиса и офлайн магазина: <b class="map__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</b></div>
-          <div class="map__text">Для заказов по телефону: <a class="map__phone" href="tel:+78124502525" title="8 812 450-25-25">8 812 450-25-25</a> (с 10 до 20 ежедневно)</div>
+          <p class="map__text">Адрес главного офиса и офлайн магазина: <b class="map__address">ул. Большая Конюшенная 19/8, Санкт-Петербург</b></p>
+          <p class="map__text">Для заказов по телефону: <a class="map__phone" href="tel:+78124502525" title="8 812 450-25-25">8 812 450-25-25</a> (с 10 до 20 ежедневно)</p>
           <a class="map__button" href="#" title="Форма обратной связи">Форма обратной связи</a>
         </div>
       </section>
     </main>
     <footer class="footer">
-      <div class="footer__item">
+      <div class="footer__item footer__item--social">
         <ul class="social">
           <li class="social__item">
             <a class="social__link" href="#" title="Twitter">Twitter</a>
@@ -225,10 +228,10 @@
           </li>
         </ul>
       </div>
-      <div class="footer__item">
+      <div class="footer__item footer__item--menu">
         <ul class="info-menu">
           <li class="info-menu__item">
-            <a class="info-menu__link" href="#" title="Для поставщиков">Для поставщиков</a>
+            <a class="info-menu__link info-menu__link--bold" href="#" title="Для поставщиков">Для поставщиков</a>
           </li>
           <li class="info-menu__item">
             <a class="info-menu__link" href="#" title="Наши документы">Наши документы</a>
@@ -241,7 +244,7 @@
           </li>
         </ul>
       </div>
-      <div class="footer__item">
+      <div class="footer__item footer__item--copyright">
         <div class="copyright">
           <a class="copyright__logo-link" href="#" title="HTML Academy">
             <img class="copyright__logo" src="http://placehold.it/108x38" alt="HTML Academy" width="108" height="38">
@@ -253,7 +256,7 @@
     <section class="modal">
       <div class="modal__wrapper">
         <button class="modal__close" type="button">Закрыть</button>
-        <form class="form" action="#" method="post">
+        <form class="form" action="https://echo.htmlacademy.ru/" method="get">
           <div class="form__item">
             <label class="form__label" for="form-feedback-name">Как вас зовут?</label>
             <input id="form-feedback-name" class="form__input" type="text" name="feedback-name" placeholder="Как вас зовут?" required>
