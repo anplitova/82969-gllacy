@@ -1,6 +1,4 @@
-'use-strict'
-
-var gllacyMap;
+'use-strict';
 
 window.onload = function() {
   ymaps.ready(initMap);
@@ -9,13 +7,13 @@ window.onload = function() {
 };
 
 function initMap() {
-  gllacyMap = new ymaps.Map('gllacy-map', {
+  var gllacyMap = new ymaps.Map('gllacy-map', {
     center: [59.939355, 30.329410],
     zoom: 16,
     controls: ['zoomControl']
   }),
   gllacyPlacemark = new ymaps.Placemark([59.938631, 30.323055], {
-    hintContent: 'GllacyShop',
+    hintContent: 'GllacyShop'
   }, {
     iconLayout: 'default#image',
     iconImageHref: 'icon/icon-map-pointer.png',
