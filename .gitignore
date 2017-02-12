@@ -9,5 +9,4 @@ Thumbs.db
 *.pdf
 package.json
 gulpfile.js
-css_to_build/
-js_to_build/
+src/

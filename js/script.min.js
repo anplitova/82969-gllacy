@@ -44,7 +44,8 @@ function initSlider() {
 
 function initModal() {
   var openModalButton = document.querySelector('.js-open-modal');
-  var openCloseButton = document.querySelector('.js-close-modal');
+  var closeModalButton = document.querySelector('.js-close-modal');
+  var overlayModal = document.querySelector('.js-overlay-modal');
 
   openModalButton.onclick = function (e) {
     event.preventDefault();
@@ -53,8 +54,15 @@ function initModal() {
     modal.classList.add('m-show');
   };
 
-  openCloseButton.onclick = function () {
+  closeModalButton.onclick = function () {
     var openModal = document.querySelector('.js-modal.m-show');
     openModal.classList.remove('m-show');
+  };
+
+  overlayModal.onclick = function (e) {
+    if (e.target.classList.contains('js-overlay-modal')) {
+      var openModal = document.querySelector('.js-modal.m-show');
+      openModal.classList.remove('m-show');
+    }
   };
 }
