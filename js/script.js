@@ -31,7 +31,7 @@ function initSlider() {
 
   sliderButton.forEach(function (button){
     button.onchange = function (e) {
-      var data = e.target.dataset;
+      var dataSlide = e.target.getAttribute('data-slide');
       var activeSlide = document.querySelector('.js-slider-item.m-show');
       if (activeSlide) {
         activeSlide.classList.remove('m-show');
@@ -41,44 +41,48 @@ function initSlider() {
           }
         }
       }
-      body.classList.add('m-slide-' + data.slide);
-      sliderList[data.slide - 1].classList.add('m-show');
+      body.classList.add('m-slide-' + dataSlide);
+      sliderList[dataSlide - 1].classList.add('m-show');
     };
   });
 }
 
 function initModal() {
-  var openModalButton = document.querySelector('.js-open-modal');
-  var closeModalButton = document.querySelector('.js-close-modal');
-  var overlayModal = document.querySelector('.js-overlay-modal');
+  var openModalButton = Array.prototype.slice.call(document.querySelectorAll('.js-open-modal'), 0);
   var openModal;
 
-  openModalButton.onclick = function (e) {
-    e.preventDefault();
-    var data = e.target.dataset;
-    var modal = document.getElementById(data.modal);
-    modal.classList.add('m-show');
-  };
+  openModalButton.forEach(function (button) {
+    button.onclick = function (e) {
+      e.preventDefault();
+      var dataModal = e.target.getAttribute('data-modal');
+      openModal = document.getElementById(dataModal);
+      var overlayModal = openModal.querySelector('.js-overlay-modal');
+      var closeModalButton = openModal.querySelector('.js-close-modal');
+      openModal.classList.add('m-show');
 
-  closeModalButton.onclick = function (e) {
-    e.preventDefault();
-    openModal = document.querySelector('.js-modal.m-show');
-    openModal.classList.remove('m-show');
-  };
+      closeModalButton.onclick = function (e) {
+        e.preventDefault();
+        closeModal();
+      };
 
-  overlayModal.onclick = function (e) {
-    if (e.target.classList.contains('js-overlay-modal')) {
-      openModal = document.querySelector('.js-modal.m-show');
-      openModal.classList.remove('m-show');
-    }
-  };
+      overlayModal.onclick = function (e) {
+        if (e.target.classList.contains('js-overlay-modal')) {
+          closeModal();
+        }
+      };
+    };
+  });
 
   window.onkeydown = function (e) {
     if (e.keyCode === 27) {
-      openModal = document.querySelector('.js-modal.m-show');
-      if (openModal) {
-        openModal.classList.remove('m-show');
-      }
+      closeModal();
+    }
+  }
+
+  function closeModal() {
+    if (openModal) {
+      openModal.classList.remove('m-show');
+      openModal = false;
     }
   }
 }
