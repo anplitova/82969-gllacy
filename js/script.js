@@ -16,7 +16,7 @@ function initMap() {
     hintContent: 'GllacyShop'
   }, {
     iconLayout: 'default#image',
-    iconImageHref: 'icon/icon-map-pointer.png',
+    iconImageHref: 'img/icon/icon-map-pointer.png',
     iconImageSize: [218, 142],
     iconImageOffset: [-38, -142]
   });
