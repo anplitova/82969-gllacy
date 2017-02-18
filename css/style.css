@@ -676,6 +676,7 @@ body {
 .search__link {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   min-width: 16px;
   min-height: 16px;
   padding: 8px;
@@ -731,6 +732,7 @@ body {
 .login__link {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding: 8px 16px 8px 44px;
   font-weight: 500;
   font-size: 14px;
@@ -784,6 +786,7 @@ body {
 .cart__link {
   position: relative;
   display: inline-block;
+  vertical-align: top;
   padding: 8px 33px 8px 45px;
   font-weight: 500;
   font-size: 14px;
@@ -1004,6 +1007,7 @@ body {
 }
 .form__link {
   display: inline-block;
+  vertical-align: top;
   font-weight: 400;
   font-size: 13px;
   line-height: 13px;
@@ -1097,6 +1101,7 @@ body {
 }
 .slider__link {
   display: inline-block;
+  vertical-align: top;
   padding: 15px 39px 16px 41px;
   font-size: 32px;
   line-height: 32px;
@@ -1478,6 +1483,7 @@ body {
   left: 0;
   width: 100%;
   height: 429px;
+  background-color: #f7f1d9;
   background-image: url("../img/gllacy-map.jpg");
   background-size: cover;
 }
@@ -1504,6 +1510,7 @@ body {
 }
 .map__phone {
   display: inline-block;
+  vertical-align: top;
   margin-top: 5px;
   line-height: 22px;
   text-decoration: none;
@@ -1516,6 +1523,7 @@ body {
 }
 .map__button {
   display: inline-block;
+  vertical-align: top;
   padding: 10px 27px 10px 27px;
   margin-top: 8px;
   font-weight: 700;
